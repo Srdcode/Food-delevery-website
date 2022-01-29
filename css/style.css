@@ -1,0 +1,155 @@
+/* css reset */
+ *{
+     margin: 0px 0px;
+     padding: 0px 0px;
+
+ }
+/* css variables */
+/* :root{
+    --navbar-height: 50px;
+} */
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+/* navigation bar: logo and image */
+#logo{
+    margin: 10px 20px;
+}
+#logo img{
+     margin: 15px 4px;
+     height: 60px;
+     width: 70px;
+}
+/* navigation bar: list styling */
+#navbar ul{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#navbar::before{
+    content: "";
+    /* background-color: rgb(2, 168, 11); */
+    position: absolute;
+    height: 89px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.0;
+    top: 0;
+    left: 0;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem; 
+}
+#navbar ul li a{
+    color: rgb(247, 115, 214);
+    display: block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(252, 38, 31);
+    background-color: rgb(72, 248, 248);
+}
+/* home section */
+#home{
+    display: flex;
+    height: 370px;
+    padding: 3px 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('spaghetti.jpg');
+    /* if we have get out of a folser we have to   ../name.jpg    */
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    padding: 3px 200px;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* food service section */
+#services{
+    margin: 34px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#services .box{
+       
+
+       border: 2px solid red;
+       margin: 15px 70px;
+       padding: 2px 2px;
+       background-color: rgb(168, 243, 243);
+       /* justify-content: space-evenly; */
+
+}
+#services .box img{
+    height: 190px;
+       
+}
+#services h1{
+    text-align: center;
+    /* display: block; */
+
+}
+/* client section
+ */
+ #client-section{
+        height: 400px;
+
+ }
+ #clients{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #clients img{
+    height: 300px;
+    width: 600px;
+ }
+/* utility classes */
+.h-primary{
+    font-size: 2.9rem;
+    padding: 12px;
+
+}
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 12px;
+
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid rgb(247, 36, 36);
+    background-color: rgb(122, 253, 155);
+    color: rgb(14, 12, 12);
+    margin: 17px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+center{
+    text-align: center;
+}
